@@ -4,12 +4,12 @@ function generateRandomNumber(num) {
   }
   
   const collectiveLyric = {
-    signInfo: ['star', 'moon', 'sun', 'comet'],
-    lyricOutput: ['terrible luck', 'bad luck', 'ok luck', 'good luck', 'great luck'],
+    subjectPart: ['Tu', 'Yo', 'Ella', 'El'],
+    lyricOutput: ['amaba', 'envidiava', 'odiaba', 'deseaba', 'pensaba'],
     advice: ['go out and eat', 'not read this', 'play more', 'trust no one']
   }
   
-  // Store the 'wisdom' in an array
+  // Store the 'lyiric' in an array
   let personalWisdom = []
   
   // Iterate over the object
@@ -18,11 +18,11 @@ function generateRandomNumber(num) {
   
     // use the object's properties to customize the message being added to personalWisdom  
     switch(prop) {
-      case 'signInfo':
-        personalWisdom.push(`Your sign right now is a "${collectiveLyric[prop][optionIdx]}".`)
+      case 'subjectPart':
+        personalWisdom.push(`Antes "${collectiveLyric[prop][optionIdx]}"`)
         break
       case 'lyricOutput':
-        personalWisdom.push(`You are having: "${collectiveLyric[prop][optionIdx]}".`)
+        personalWisdom.push(` "${collectiveLyric[prop][optionIdx]}" todo.`)
         break
       case 'advice':
         personalWisdom.push(`You should: "${collectiveLyric[prop][optionIdx]}".`)
